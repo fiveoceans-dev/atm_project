@@ -7,6 +7,8 @@
 #ifndef ATMCOMPONENTS_H
 #define ATMCOMPONENTS_H
 
+#include "Account.h"
+
 #include <unordered_map>
 #include <string>
 
@@ -19,9 +21,6 @@ public:
 
 class CashBin {
 public:
-    bool cashBin() {
-        return true;
-    };
     bool dispenseCash(int amount) ;
 };
 
@@ -39,15 +38,6 @@ public:
     Account* getAccount(const std::string& cardNumber);
 private:
     std::unordered_map<std::string, std::pair<int, Account>> bankDatabase;
-};
-
-class Account {
-public:
-    Account(int initialBalance = 0);
-    bool withdraw(int amount);
-    void deposit(int amount);
-    int getBalance();
-
 };
 
 #endif // ATMCOMPONENTS_H

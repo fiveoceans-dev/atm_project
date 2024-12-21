@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/ATMComponents.o: src/ATMComponents.cpp.o
+.PHONY : src/ATMComponents.o
+
+# target to build an object file
+src/ATMComponents.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o
+.PHONY : src/ATMComponents.cpp.o
+
+src/ATMComponents.i: src/ATMComponents.cpp.i
+.PHONY : src/ATMComponents.i
+
+# target to preprocess a source file
+src/ATMComponents.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.i
+.PHONY : src/ATMComponents.cpp.i
+
+src/ATMComponents.s: src/ATMComponents.cpp.s
+.PHONY : src/ATMComponents.s
+
+# target to generate assembly for a file
+src/ATMComponents.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.s
+.PHONY : src/ATMComponents.cpp.s
+
 src/ATMController.o: src/ATMController.cpp.o
 .PHONY : src/ATMController.o
 
@@ -177,6 +201,30 @@ src/ATMController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMController.cpp.s
 .PHONY : src/ATMController.cpp.s
 
+src/Account.o: src/Account.cpp.o
+.PHONY : src/Account.o
+
+# target to build an object file
+src/Account.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.o
+.PHONY : src/Account.cpp.o
+
+src/Account.i: src/Account.cpp.i
+.PHONY : src/Account.i
+
+# target to preprocess a source file
+src/Account.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.i
+.PHONY : src/Account.cpp.i
+
+src/Account.s: src/Account.cpp.s
+.PHONY : src/Account.s
+
+# target to generate assembly for a file
+src/Account.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.s
+.PHONY : src/Account.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +237,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/ATMComponents.o"
+	@echo "... src/ATMComponents.i"
+	@echo "... src/ATMComponents.s"
 	@echo "... src/ATMController.o"
 	@echo "... src/ATMController.i"
 	@echo "... src/ATMController.s"
+	@echo "... src/Account.o"
+	@echo "... src/Account.i"
+	@echo "... src/Account.s"
 .PHONY : help
 
 

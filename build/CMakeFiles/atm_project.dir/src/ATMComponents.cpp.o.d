@@ -1,6 +1,5 @@
-CMakeFiles/atm_project.dir/main.cpp.o: \
-  /Users/platon1/DEV/GITHUB/atm_project/main.cpp \
-  /Users/platon1/DEV/GITHUB/atm_project/include/ATMController.h \
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o: \
+  /Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp \
   /Users/platon1/DEV/GITHUB/atm_project/include/ATMComponents.h \
   /Users/platon1/DEV/GITHUB/atm_project/include/Account.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/unordered_map \

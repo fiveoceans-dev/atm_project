@@ -69,10 +69,38 @@ include CMakeFiles/atm_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/atm_project.dir/flags.make
 
+CMakeFiles/atm_project.dir/src/Account.cpp.o: CMakeFiles/atm_project.dir/flags.make
+CMakeFiles/atm_project.dir/src/Account.cpp.o: /Users/platon1/DEV/GITHUB/atm_project/src/Account.cpp
+CMakeFiles/atm_project.dir/src/Account.cpp.o: CMakeFiles/atm_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/atm_project.dir/src/Account.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/atm_project.dir/src/Account.cpp.o -MF CMakeFiles/atm_project.dir/src/Account.cpp.o.d -o CMakeFiles/atm_project.dir/src/Account.cpp.o -c /Users/platon1/DEV/GITHUB/atm_project/src/Account.cpp
+
+CMakeFiles/atm_project.dir/src/Account.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/atm_project.dir/src/Account.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/platon1/DEV/GITHUB/atm_project/src/Account.cpp > CMakeFiles/atm_project.dir/src/Account.cpp.i
+
+CMakeFiles/atm_project.dir/src/Account.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/atm_project.dir/src/Account.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/platon1/DEV/GITHUB/atm_project/src/Account.cpp -o CMakeFiles/atm_project.dir/src/Account.cpp.s
+
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o: CMakeFiles/atm_project.dir/flags.make
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o: /Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o: CMakeFiles/atm_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o -MF CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o.d -o CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o -c /Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp
+
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/atm_project.dir/src/ATMComponents.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp > CMakeFiles/atm_project.dir/src/ATMComponents.cpp.i
+
+CMakeFiles/atm_project.dir/src/ATMComponents.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/atm_project.dir/src/ATMComponents.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp -o CMakeFiles/atm_project.dir/src/ATMComponents.cpp.s
+
 CMakeFiles/atm_project.dir/src/ATMController.cpp.o: CMakeFiles/atm_project.dir/flags.make
 CMakeFiles/atm_project.dir/src/ATMController.cpp.o: /Users/platon1/DEV/GITHUB/atm_project/src/ATMController.cpp
 CMakeFiles/atm_project.dir/src/ATMController.cpp.o: CMakeFiles/atm_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/atm_project.dir/src/ATMController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/atm_project.dir/src/ATMController.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/atm_project.dir/src/ATMController.cpp.o -MF CMakeFiles/atm_project.dir/src/ATMController.cpp.o.d -o CMakeFiles/atm_project.dir/src/ATMController.cpp.o -c /Users/platon1/DEV/GITHUB/atm_project/src/ATMController.cpp
 
 CMakeFiles/atm_project.dir/src/ATMController.cpp.i: cmake_force
@@ -86,7 +114,7 @@ CMakeFiles/atm_project.dir/src/ATMController.cpp.s: cmake_force
 CMakeFiles/atm_project.dir/main.cpp.o: CMakeFiles/atm_project.dir/flags.make
 CMakeFiles/atm_project.dir/main.cpp.o: /Users/platon1/DEV/GITHUB/atm_project/main.cpp
 CMakeFiles/atm_project.dir/main.cpp.o: CMakeFiles/atm_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/atm_project.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/atm_project.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/atm_project.dir/main.cpp.o -MF CMakeFiles/atm_project.dir/main.cpp.o.d -o CMakeFiles/atm_project.dir/main.cpp.o -c /Users/platon1/DEV/GITHUB/atm_project/main.cpp
 
 CMakeFiles/atm_project.dir/main.cpp.i: cmake_force
@@ -99,17 +127,21 @@ CMakeFiles/atm_project.dir/main.cpp.s: cmake_force
 
 # Object files for target atm_project
 atm_project_OBJECTS = \
+"CMakeFiles/atm_project.dir/src/Account.cpp.o" \
+"CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o" \
 "CMakeFiles/atm_project.dir/src/ATMController.cpp.o" \
 "CMakeFiles/atm_project.dir/main.cpp.o"
 
 # External object files for target atm_project
 atm_project_EXTERNAL_OBJECTS =
 
+atm_project: CMakeFiles/atm_project.dir/src/Account.cpp.o
+atm_project: CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o
 atm_project: CMakeFiles/atm_project.dir/src/ATMController.cpp.o
 atm_project: CMakeFiles/atm_project.dir/main.cpp.o
 atm_project: CMakeFiles/atm_project.dir/build.make
 atm_project: CMakeFiles/atm_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable atm_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable atm_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atm_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

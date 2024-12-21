@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/platon1/DEV/GITHUB/atm_project/main.cpp" "CMakeFiles/atm_project.dir/main.cpp.o" "gcc" "CMakeFiles/atm_project.dir/main.cpp.o.d"
+  "/Users/platon1/DEV/GITHUB/atm_project/src/ATMComponents.cpp" "CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o" "gcc" "CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o.d"
   "/Users/platon1/DEV/GITHUB/atm_project/src/ATMController.cpp" "CMakeFiles/atm_project.dir/src/ATMController.cpp.o" "gcc" "CMakeFiles/atm_project.dir/src/ATMController.cpp.o.d"
+  "/Users/platon1/DEV/GITHUB/atm_project/src/Account.cpp" "CMakeFiles/atm_project.dir/src/Account.cpp.o" "gcc" "CMakeFiles/atm_project.dir/src/Account.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

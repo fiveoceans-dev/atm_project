@@ -7,21 +7,19 @@
 #include "ATMController.h"
 #include <iostream>
 
-ATMController::ATMController() : cardReader(), cashBin(), keypad(), bank(), userAccount {}
+ATMController::ATMController() : cardReader(), cashBin(), keypad(), bank(), userAccount(nullptr) {}
 
 bool ATMController::insertCard(const std::string& cardNumber) {
-
-    if (!cardReader.readCard(cardNumber)) {
+    if (cardReader.readCard(cardNumber)) {
         userAccount = bank.getAccount(cardNumber);
         if (userAccount) {
             std::cout << "Card accepted. Please enter your PIN ****." << std::endl;
             std::cout << "Welcome to the Bear Bank ATM!" << std::endl;
-            return;
+            return true;
         }
     }
     std::cout << "Invalid card." << std::endl;
     return false;
-    
 }
 
 
@@ -36,23 +34,22 @@ bool ATMController::enterPin(int pin) {
         return true;
     }
     
-    std:cout << "Incorrect PIN." << std::endl;
+    std::cout << "Incorrect PIN." << std::endl;
     return false;
 }
 
 
-bool ATMController::checkBalance() const {
-    if (!userAccount) {
-        std::cout << "Balance: $" << currentAccount -> getBalance() << std::endl;
+void ATMController::checkBalance() const {
+    if (userAccount) {
+        std::cout << "Balance: $" << userAccount -> getBalance() << std::endl;
     }
 }
 
 
-bool ATMController::depositCash(int depositAmount) {
-    if (!userAccount) {
+void ATMController::depositCash(int depositAmount) {
+    if (userAccount) {
         userAccount->deposit(depositAmount);
         std::cout << "Deposit successful. Deposited $" << depositAmount << ". New balance: $" << userAccount->getBalance() << std::endl;
-        return false;
     }
 }
 
@@ -71,7 +68,7 @@ void ATMController::withdrawCash(int withdrawAmount) {
             std::cout << "Incuficient funds." << std::endl;
         }
     }
-};
+}
 
 
 void ATMController::run() {

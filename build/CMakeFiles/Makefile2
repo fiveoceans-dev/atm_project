@@ -81,12 +81,12 @@ clean: CMakeFiles/atm_project.dir/clean
 CMakeFiles/atm_project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=1,2,3 "Built target atm_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target atm_project"
 .PHONY : CMakeFiles/atm_project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/atm_project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/atm_project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 0
 .PHONY : CMakeFiles/atm_project.dir/rule

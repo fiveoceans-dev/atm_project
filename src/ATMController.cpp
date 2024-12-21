@@ -59,7 +59,7 @@ void ATMController::depositCash(int depositAmount) {
 void ATMController::withdrawCash(int withdrawAmount) {
     if (userAccount) {
         if (userAccount->withdraw(withdrawAmount)) {
-            if (!cashBin.dispenseCash(withdrawAmount)) {
+            if (cashBin.dispenseCash(withdrawAmount)) {
                 std::cout << "Cash dispensed." << std::endl;
                 return;
             } else {
@@ -77,7 +77,7 @@ void ATMController::run() {
     std::string insertedCardNumber;
     std::cout << "Please insert your card." << std::endl;
     std::cin >> insertedCardNumber;
-    
+
     if (insertCard(insertedCardNumber)) {
         int pin;
         std::cin >> pin;
@@ -95,6 +95,7 @@ void ATMController::run() {
                     break;
                 case 3:
                     int withdrawAmount;
+                    std::cout << "Enter amount to withdraw: ";
                     std::cin >> withdrawAmount;
                     withdrawCash(withdrawAmount);
                     break;

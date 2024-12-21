@@ -3,7 +3,7 @@
 ## Description
 Implement functions, classes, methods for development of ATM machine.
 
-![ATM system design](atm_1.png)
+![ATM system design](atm_image_1.png)
 
 ## Minimum requirements
 Insert Cards

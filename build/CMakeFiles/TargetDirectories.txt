@@ -1,3 +1,5 @@
 /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles/atm_project.dir
+/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles/test_ATMComponents.dir
+/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles/test_ATMController.dir
 /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles/edit_cache.dir
 /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles/rebuild_cache.dir

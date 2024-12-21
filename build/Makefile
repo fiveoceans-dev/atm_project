@@ -129,6 +129,32 @@ atm_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/build
 .PHONY : atm_project/fast
 
+#=============================================================================
+# Target rules for targets named test_ATMComponents
+
+# Build rule for target.
+test_ATMComponents: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ATMComponents
+.PHONY : test_ATMComponents
+
+# fast build rule for target.
+test_ATMComponents/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/build
+.PHONY : test_ATMComponents/fast
+
+#=============================================================================
+# Target rules for targets named test_ATMController
+
+# Build rule for target.
+test_ATMController: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_ATMController
+.PHONY : test_ATMController
+
+# fast build rule for target.
+test_ATMController/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/build
+.PHONY : test_ATMController/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -159,6 +185,8 @@ src/ATMComponents.o: src/ATMComponents.cpp.o
 # target to build an object file
 src/ATMComponents.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/ATMComponents.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMComponents.cpp.o
 .PHONY : src/ATMComponents.cpp.o
 
 src/ATMComponents.i: src/ATMComponents.cpp.i
@@ -167,6 +195,8 @@ src/ATMComponents.i: src/ATMComponents.cpp.i
 # target to preprocess a source file
 src/ATMComponents.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/ATMComponents.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMComponents.cpp.i
 .PHONY : src/ATMComponents.cpp.i
 
 src/ATMComponents.s: src/ATMComponents.cpp.s
@@ -175,6 +205,8 @@ src/ATMComponents.s: src/ATMComponents.cpp.s
 # target to generate assembly for a file
 src/ATMComponents.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMComponents.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/ATMComponents.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMComponents.cpp.s
 .PHONY : src/ATMComponents.cpp.s
 
 src/ATMController.o: src/ATMController.cpp.o
@@ -183,6 +215,7 @@ src/ATMController.o: src/ATMController.cpp.o
 # target to build an object file
 src/ATMController.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMController.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMController.cpp.o
 .PHONY : src/ATMController.cpp.o
 
 src/ATMController.i: src/ATMController.cpp.i
@@ -191,6 +224,7 @@ src/ATMController.i: src/ATMController.cpp.i
 # target to preprocess a source file
 src/ATMController.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMController.cpp.i
 .PHONY : src/ATMController.cpp.i
 
 src/ATMController.s: src/ATMController.cpp.s
@@ -199,6 +233,7 @@ src/ATMController.s: src/ATMController.cpp.s
 # target to generate assembly for a file
 src/ATMController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/ATMController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/ATMController.cpp.s
 .PHONY : src/ATMController.cpp.s
 
 src/Account.o: src/Account.cpp.o
@@ -207,6 +242,8 @@ src/Account.o: src/Account.cpp.o
 # target to build an object file
 src/Account.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/Account.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/Account.cpp.o
 .PHONY : src/Account.cpp.o
 
 src/Account.i: src/Account.cpp.i
@@ -215,6 +252,8 @@ src/Account.i: src/Account.cpp.i
 # target to preprocess a source file
 src/Account.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/Account.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/Account.cpp.i
 .PHONY : src/Account.cpp.i
 
 src/Account.s: src/Account.cpp.s
@@ -223,7 +262,57 @@ src/Account.s: src/Account.cpp.s
 # target to generate assembly for a file
 src/Account.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/src/Account.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/src/Account.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/src/Account.cpp.s
 .PHONY : src/Account.cpp.s
+
+tests/test_ATMComponents.o: tests/test_ATMComponents.cpp.o
+.PHONY : tests/test_ATMComponents.o
+
+# target to build an object file
+tests/test_ATMComponents.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/tests/test_ATMComponents.cpp.o
+.PHONY : tests/test_ATMComponents.cpp.o
+
+tests/test_ATMComponents.i: tests/test_ATMComponents.cpp.i
+.PHONY : tests/test_ATMComponents.i
+
+# target to preprocess a source file
+tests/test_ATMComponents.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/tests/test_ATMComponents.cpp.i
+.PHONY : tests/test_ATMComponents.cpp.i
+
+tests/test_ATMComponents.s: tests/test_ATMComponents.cpp.s
+.PHONY : tests/test_ATMComponents.s
+
+# target to generate assembly for a file
+tests/test_ATMComponents.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/tests/test_ATMComponents.cpp.s
+.PHONY : tests/test_ATMComponents.cpp.s
+
+tests/test_ATMController.o: tests/test_ATMController.cpp.o
+.PHONY : tests/test_ATMController.o
+
+# target to build an object file
+tests/test_ATMController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/tests/test_ATMController.cpp.o
+.PHONY : tests/test_ATMController.cpp.o
+
+tests/test_ATMController.i: tests/test_ATMController.cpp.i
+.PHONY : tests/test_ATMController.i
+
+# target to preprocess a source file
+tests/test_ATMController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/tests/test_ATMController.cpp.i
+.PHONY : tests/test_ATMController.cpp.i
+
+tests/test_ATMController.s: tests/test_ATMController.cpp.s
+.PHONY : tests/test_ATMController.s
+
+# target to generate assembly for a file
+tests/test_ATMController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/tests/test_ATMController.cpp.s
+.PHONY : tests/test_ATMController.cpp.s
 
 # Help Target
 help:
@@ -234,6 +323,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... atm_project"
+	@echo "... test_ATMComponents"
+	@echo "... test_ATMController"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -246,6 +337,12 @@ help:
 	@echo "... src/Account.o"
 	@echo "... src/Account.i"
 	@echo "... src/Account.s"
+	@echo "... tests/test_ATMComponents.o"
+	@echo "... tests/test_ATMComponents.i"
+	@echo "... tests/test_ATMComponents.s"
+	@echo "... tests/test_ATMController.o"
+	@echo "... tests/test_ATMController.i"
+	@echo "... tests/test_ATMController.s"
 .PHONY : help
 
 

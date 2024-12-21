@@ -9,10 +9,11 @@
 
 class Account {
     public:
-        Account(int initialBalance = 0);
+        Account(int initialBalance);
+        Account();
         bool withdraw(int amount);
         void deposit(int amount);
-        int getBalance();
+        int getBalance() const;
 
     private:
         int balance;

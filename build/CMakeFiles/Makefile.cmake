@@ -27,6 +27,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeDetermineSystem.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeFindBinUtils.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeLanguageInformation.cmake"
@@ -40,6 +41,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeTestCompilerCommon.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeUnixFindMake.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CheckCSourceCompiles.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CheckIncludeFile.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CheckLibraryExists.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
@@ -98,7 +102,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindGTest.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindPackageMessage.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/FindThreads.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/GoogleTest.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake"
+  "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Internal/FeatureTesting.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
@@ -109,6 +119,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Platform/Darwin.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake"
+  "/opt/homebrew/lib/cmake/GTest/GTestConfigVersion.cmake"
+  "/opt/homebrew/lib/cmake/GTest/GTestTargets-release.cmake"
+  "/opt/homebrew/lib/cmake/GTest/GTestTargets.cmake"
   )
 
 # The corresponding makefile is:
@@ -130,4 +144,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/atm_project.dir/DependInfo.cmake"
+  "CMakeFiles/test_ATMComponents.dir/DependInfo.cmake"
+  "CMakeFiles/test_ATMController.dir/DependInfo.cmake"
   )

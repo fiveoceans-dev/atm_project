@@ -13,6 +13,7 @@
 class ATMController {
 public:
     ATMController();
+    void depositCash(int amount);
     void run();
 
 private:
@@ -26,8 +27,9 @@ private:
     bool insertCard(const std::string& cardNumber);
     bool enterPin(int pin);
     void checkBalance() const;
-    void depositCash(int amount);
     void withdrawCash(int amount);
+
+    friend class ATMControllerTest_Friend;
 };
 
 #endif // ATMCONTROLLER_H

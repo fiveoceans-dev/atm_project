@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /Users/platon1/DEV/GITHUB/atm_project/build
 
 # The main recursive "all" target.
 all: CMakeFiles/atm_project.dir/all
+all: CMakeFiles/test_ATMComponents.dir/all
+all: CMakeFiles/test_ATMController.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/atm_project.dir/clean
+clean: CMakeFiles/test_ATMComponents.dir/clean
+clean: CMakeFiles/test_ATMController.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,6 +103,58 @@ atm_project: CMakeFiles/atm_project.dir/rule
 CMakeFiles/atm_project.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_project.dir/build.make CMakeFiles/atm_project.dir/clean
 .PHONY : CMakeFiles/atm_project.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_ATMComponents.dir
+
+# All Build rule for target.
+CMakeFiles/test_ATMComponents.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=6,7,8,9 "Built target test_ATMComponents"
+.PHONY : CMakeFiles/test_ATMComponents.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_ATMComponents.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ATMComponents.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_ATMComponents.dir/rule
+
+# Convenience name for target.
+test_ATMComponents: CMakeFiles/test_ATMComponents.dir/rule
+.PHONY : test_ATMComponents
+
+# clean rule for target.
+CMakeFiles/test_ATMComponents.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMComponents.dir/build.make CMakeFiles/test_ATMComponents.dir/clean
+.PHONY : CMakeFiles/test_ATMComponents.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_ATMController.dir
+
+# All Build rule for target.
+CMakeFiles/test_ATMController.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles --progress-num=10,11,12,13,14 "Built target test_ATMController"
+.PHONY : CMakeFiles/test_ATMController.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_ATMController.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_ATMController.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/platon1/DEV/GITHUB/atm_project/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_ATMController.dir/rule
+
+# Convenience name for target.
+test_ATMController: CMakeFiles/test_ATMController.dir/rule
+.PHONY : test_ATMController
+
+# clean rule for target.
+CMakeFiles/test_ATMController.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_ATMController.dir/build.make CMakeFiles/test_ATMController.dir/clean
+.PHONY : CMakeFiles/test_ATMController.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

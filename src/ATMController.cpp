@@ -90,6 +90,7 @@ void ATMController::run() {
                     break;
                 case 2:
                     int depositAmount;
+                    std::cout << "Enter amount to deposit: ";
                     std::cin >> depositAmount;
                     depositCash(depositAmount);
                     break;

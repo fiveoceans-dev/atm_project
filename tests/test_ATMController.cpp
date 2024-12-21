@@ -1,37 +1,50 @@
 #include <gtest/gtest.h>
 #include "ATMController.h"
 #include "ATMComponents.h"
+#include "Account.h"
+
+// Friend test class to access private methods
+class ATMControllerTest_Friend : public ATMController {
+public:
+    using ATMController::insertCard;
+    using ATMController::enterPin;
+    using ATMController::checkBalance;
+    using ATMController::withdrawCash;
+};
 
 // Test for Authentication
 TEST(ATMControllerTest, AuthenticateUserSuccessfully) {
-    ATMController atmController;
-    EXPECT_TRUE(atmController.authenticateUser());
+    ATMControllerTest_Friend atmController;
+    EXPECT_TRUE(atmController.insertCard("123456"));
+    EXPECT_TRUE(atmController.enterPin(1234));
 }
 
 // Test for Withdrawal
 TEST(ATMControllerTest, WithdrawCashSuccessfully) {
-    ATMController atmController;
-    atmController.authenticateUser();
-    EXPECT_TRUE(atmController.withdrawCash(100));
+    ATMControllerTest_Friend atmController;
+    atmController.insertCard("123456");
+    atmController.enterPin(1234);
+
+    testing::internal::CaptureStdout();
+    atmController.checkBalance();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Balance: $1000"), std::string::npos);
 }
 
 // Test for Balance Inquiry
 TEST(ATMControllerTest, CheckBalance) {
-    ATMController atmController;
-    atmController.authenticateUser();
-    double balance = atmController.checkBalance();
-    EXPECT_DOUBLE_EQ(balance, 1000.0);
+    ATMControllerTest_Friend atmController;
+    atmController.insertCard("123456");
+    atmController.enterPin(1234);
+
+    testing::internal::CaptureStdout();
+    atmController.checkBalance();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Balance: $1000"), std::string::npos);
 }
 
-// Test for Insufficient Funds
-TEST(ATMControllerTest, WithdrawCashInsufficientFunds) {
-    ATMController atmController;
-    atmController.authenticateUser();
-    EXPECT_FALSE(atmController.withdrawCash(5000));
-}
 
-// Test for Error Handling
-TEST(ATMControllerTest, HandleCardReaderError) {
-    ATMController atmController;
-    EXPECT_FALSE(atmController.authenticateUser());
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

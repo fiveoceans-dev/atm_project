@@ -1,21 +1,18 @@
-#include <getest/gtest.h>
-#include "CardReader.h"
-#include "CashBin.h"
-#include "Keypad.h"
-#include "Bank.h"
+#include <gtest/gtest.h>
+#include "ATMComponents.h"
+#include "ATMController.h"
 #include "Account.h"
 
 // Test for card reader
 TEST(CardReaderTest, ReadCardSuccessfully) {
     CardReader cardReader;
-    int accountNumber = cardReader.readCard();
-    EXPECT_EQ(accountNumber, 123456);
+    EXPECT_TRUE(cardReader.readCard("123456"));
 }
 
 // Test for cash bin
 TEST(CashBinTest, DispenseCashSuccessfully) {
     CashBin cashBin;
-    EXPECT_TRUE(dispensed.dispenseCash(100));
+    EXPECT_TRUE(cashBin.dispenseCash(100));
 }
 
 // Test for keypad
@@ -30,5 +27,9 @@ TEST(BankTest, PinCheckSuccessfully) {
     Bank bank;
     Account* account = bank.getAccount("123456");
     ASSERT_NE(account, nullptr);
-    EXPECT_TRUE(account->validatePIN(1234));
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

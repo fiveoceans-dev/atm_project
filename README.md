@@ -23,3 +23,10 @@ Keep in mind that UI can be implemented by another engineer in the future
 Add tests for controller logic
 
 
+## Build instructions
+```bash
+mkdir build && cd build
+cmake ..
+make
+./atm_project
+```

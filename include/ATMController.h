@@ -20,6 +20,13 @@ private:
     CashBin cashBin;
     Keypad keypad;
     Bank bank;
+    Account* userAccount;
+
+    bool insertCard(const std::string& cardNumber);
+    bool enterPin(int pin);
+    void checkBalance() const;
+    void depositCash(int amount);
+    void withdrawCash(int amount);
 };
 
 #endif // ATMCONTROLLER_H

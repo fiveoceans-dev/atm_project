@@ -27,9 +27,10 @@ cmake ..
 make
 ./atm_project
 ```
-No | Card number | PIN
-1 | 123456 | 1234
-2 | 654321 | 4321
+| No | Card number | PIN |
+|-------|-------|-------|
+| 1 | 123456 | 1234 |
+| 2 | 654321 | 4321 |
 
 ## Test Build instructions (from root folder)
 ```bash
@@ -38,5 +39,6 @@ brew install googletest
 mkdir build && cd build
 cmake ..
 make
-./atm_project
+./test_ATMController
+./test_ATMComponents
 ```

@@ -13,8 +13,9 @@ bool ATMController::insertCard(const std::string& cardNumber) {
     if (cardReader.readCard(cardNumber)) {
         userAccount = bank.getAccount(cardNumber);
         if (userAccount) {
-            std::cout << "Card accepted. Please enter your PIN ****." << std::endl;
+            insertedCardNumber = cardNumber;
             std::cout << "Welcome to the Bear Bank ATM!" << std::endl;
+            std::cout << "Card accepted. Please enter your PIN ****." << std::endl;
             return true;
         }
     }
@@ -28,7 +29,7 @@ bool ATMController::enterPin(int pin) {
         std::cout << "Please insert your card." << std::endl;
         return false;
     }
-    if (bank.pinCheck("123456", pin)) {
+    if (bank.pinCheck(insertedCardNumber, pin)) {
         std::cout << "PIN accepted." << std::endl;
         std::cout << "Select: 1. Balance | 2. Deposit | 3. Withdraw." << std::endl;
         return true;
@@ -73,8 +74,11 @@ void ATMController::withdrawCash(int withdrawAmount) {
 
 void ATMController::run() {
     std::cout << "ATM Starting..." << std::endl;
-
-    if (insertCard("123456")) {
+    std::string insertedCardNumber;
+    std::cout << "Please insert your card." << std::endl;
+    std::cin >> insertedCardNumber;
+    
+    if (insertCard(insertedCardNumber)) {
         int pin;
         std::cin >> pin;
         if (enterPin(pin)) {

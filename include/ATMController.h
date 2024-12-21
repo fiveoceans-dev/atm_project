@@ -21,6 +21,7 @@ private:
     Keypad keypad;
     Bank bank;
     Account* userAccount;
+    std::string insertedCardNumber;
 
     bool insertCard(const std::string& cardNumber);
     bool enterPin(int pin);

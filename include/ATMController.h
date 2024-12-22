@@ -32,4 +32,4 @@ private:
     friend class ATMControllerTest_Friend;
 };
 
-#endif // ATMCONTROLLER_H
+#endif

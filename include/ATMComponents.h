@@ -40,4 +40,4 @@ private:
     std::unordered_map<std::string, std::pair<int, Account>> bankDatabase;
 };
 
-#endif // ATMCOMPONENTS_H
+#endif

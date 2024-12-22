@@ -43,6 +43,25 @@ TEST(ATMControllerTest, CheckBalance) {
     EXPECT_NE(output.find("Balance: $1000"), std::string::npos);
 }
 
+// Test for Funds
+TEST(ATMControllerTest, WithdrawCashInsufficientFunds) {
+    ATMControllerTest_Friend atmController;
+    
+    atmController.insertCard("123456");
+    atmController.enterPin(1234);
+    
+    testing::internal::CaptureStdout();
+    atmController.withdrawCash(6000);
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Insufficient funds."), std::string::npos);
+}
+
+// Test for Invalid Card
+TEST(ATMControllerTest, HandleCardReaderError) {
+    ATMControllerTest_Friend atmController;
+    
+    EXPECT_FALSE(atmController.insertCard("invalid_card"));
+}
 
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);

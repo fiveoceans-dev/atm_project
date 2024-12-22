@@ -9,6 +9,7 @@
 
 ATMController::ATMController() : cardReader(), cashBin(), keypad(), bank(), userAccount(nullptr) {}
 
+// Insert card and check if it is valid
 bool ATMController::insertCard(const std::string& cardNumber) {
     if (cardReader.readCard(cardNumber)) {
         userAccount = bank.getAccount(cardNumber);
@@ -23,7 +24,7 @@ bool ATMController::insertCard(const std::string& cardNumber) {
     return false;
 }
 
-
+// Check if the entered PIN is correct
 bool ATMController::enterPin(int pin) {
     if (!userAccount) {
         std::cout << "Please insert your card." << std::endl;
@@ -39,14 +40,14 @@ bool ATMController::enterPin(int pin) {
     return false;
 }
 
-
+// Check balance
 void ATMController::checkBalance() const {
     if (userAccount) {
         std::cout << "Balance: $" << userAccount -> getBalance() << std::endl;
     }
 }
 
-
+// Deposit cash
 void ATMController::depositCash(int depositAmount) {
     if (userAccount) {
         userAccount->deposit(depositAmount);
@@ -55,7 +56,7 @@ void ATMController::depositCash(int depositAmount) {
 }
 
 
-// Check and withdraw cash
+// Withdraw cash
 void ATMController::withdrawCash(int withdrawAmount) {
     if (userAccount) {
         if (userAccount->withdraw(withdrawAmount)) {
@@ -66,12 +67,12 @@ void ATMController::withdrawCash(int withdrawAmount) {
                 std::cout << "Cash dispenser error." << std::endl;
             } 
         } else {
-            std::cout << "Incuficient funds." << std::endl;
+            std::cout << "Insufficient funds." << std::endl;
         }
     }
 }
 
-
+// Run the ATM
 void ATMController::run() {
     std::cout << "ATM Starting..." << std::endl;
     std::string insertedCardNumber;
